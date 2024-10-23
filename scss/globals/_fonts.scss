@@ -24,3 +24,11 @@
     font-weight: 400;
     src: url('/assets/fonts/barlow-condensed-v12-latin-regular.woff2') format('woff2');
   }
+  
+  @font-face {
+    font-display: swap;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/assets/fonts/barlow-condensed-v12-latin-700.woff2') format('woff2'); 
+  }

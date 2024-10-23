@@ -103,6 +103,13 @@ textarea:not([rows]) {
   font-weight: 400;
   src: url("/assets/fonts/barlow-condensed-v12-latin-regular.woff2") format("woff2");
 }
+@font-face {
+  font-display: swap;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/fonts/barlow-condensed-v12-latin-700.woff2") format("woff2");
+}
 /* CUSTOM PROPERTIES */
 :root {
   /* Primitive properties */
@@ -112,6 +119,8 @@ textarea:not([rows]) {
   --ff-serif: "Bellefair";
   --ff-sans-serif1: "Barlow";
   --ff-sans-serif2: "Barlow Condensed";
+  --fw-400: 400;
+  --fw-700: 700;
   --fs-14px: .875rem;
   --fs-16px: 1rem;
   --fs-28px: 1.75rem;
@@ -139,6 +148,8 @@ textarea:not([rows]) {
   --ff-primary-100: var(--ff-serif);
   --ff-primary-200: var(--ff-sans-serif1);
   --ff-primary-300: var(--ff-sans-serif2);
+  --fw-regular: var(--fw-400);
+  --fw-bold: var(--fw-700);
   --fs-100: var(--fs-14px);
   --fs-200: var(--fs-16px);
   --fs-300: var(--fs-28px);
@@ -161,4 +172,9 @@ textarea:not([rows]) {
   --space-1600: var(--space-128px);
 }
 
-/* UTILITIES *//*# sourceMappingURL=style.css.map */
+/* UTILITIES */
+/* BASE STYLES */
+body {
+  background-color: var(--clr-primary-300);
+  color: var(--clr-primary-100);
+}/*# sourceMappingURL=style.css.map */

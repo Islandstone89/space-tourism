@@ -12,6 +12,9 @@
     --ff-sans-serif1: 'Barlow';
     --ff-sans-serif2: 'Barlow Condensed';
 
+    --fw-400: 400;
+    --fw-700: 700;
+
     --fs-14px: .875rem;
     --fs-16px: 1rem;
     --fs-28px: 1.75rem;
@@ -43,6 +46,9 @@
     --ff-primary-100: var(--ff-serif);
     --ff-primary-200: var(--ff-sans-serif1);
     --ff-primary-300: var(--ff-sans-serif2);
+
+    --fw-regular: var(--fw-400);
+    --fw-bold: var(--fw-700);
 
     --fs-100: var(--fs-14px);
     --fs-200: var(--fs-16px);
