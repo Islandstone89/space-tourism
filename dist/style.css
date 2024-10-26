@@ -177,4 +177,24 @@ textarea:not([rows]) {
 body {
   background-color: var(--clr-primary-300);
   color: var(--clr-primary-100);
+  font-family: var(--ff-primary-300);
+  text-transform: uppercase;
+}
+
+/* HEADER STYLES */
+.primary-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.primary-nav__list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-600);
+}
+
+.primary__nav__link {
+  display: flex;
+  gap: var(--space-150);
 }/*# sourceMappingURL=style.css.map */

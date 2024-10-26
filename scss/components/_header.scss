@@ -1,0 +1,19 @@
+
+/* HEADER STYLES */
+
+.primary-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.primary-nav__list {
+    display: flex;
+    align-items: center;
+    gap: var(--space-600);
+}
+
+.primary__nav__link {
+    display: flex;
+    gap: var(--space-150);
+}
