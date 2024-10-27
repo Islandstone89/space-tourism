@@ -9,12 +9,18 @@
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
-
   <header class="primary-header">
-    <img src="assets/shared/logo.svg" alt="Space Tourism - Home">
+
+    <div class="logo-wrapper">
+      <img src="assets/shared/logo.svg" alt="Space Tourism - Home" class="logo">
+    </div><!-- end logo-wrapper -->
+
+    <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="primaryNavList">
+      <span class="visually-hidden">Menu</span>
+    </button>
 
     <nav class="primary-nav">
-      <ul class="primary-nav__list">
+      <ul class="primary-nav__list" id="primaryNavList">
 
         <li class="primary__nav__item">
           <a href="/" class="primary__nav__link"><span class="primary__nav__number">00</span> Home</a>

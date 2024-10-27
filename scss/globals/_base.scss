@@ -1,4 +1,6 @@
 
+@use '../globals/utilities' as util;
+
 /* BASE STYLES */
 
 body {
@@ -6,4 +8,17 @@ body {
     color: var(--clr-primary-100);
     font-family: var(--ff-primary-300);
     text-transform: uppercase;
+
+    background-image: url('/assets/home/background-home-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+
+    @include util.breakpoint(medium) {
+        background-image: url('/assets/home/background-home-tablet.jpg');
+    }
+
+    @include util.breakpoint(large) {
+        background-image: url('/assets/home/background-home-desktop.jpg');
+    }
 }

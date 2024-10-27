@@ -1,3 +1,23 @@
 
 /* UTILITIES */
 
+$breakpoints: (
+    "medium": 43.75rem,
+    "large": 56.25rem,
+    "xlarge": 68.75rem,
+    "xxlarge": 90rem,
+);
+
+@mixin breakpoint($size) {
+    @media (width > map-get($breakpoints, $size)) {
+        @content;
+    }
+}
+.visually-hidden {
+    clip-path: inset(50%);
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+}

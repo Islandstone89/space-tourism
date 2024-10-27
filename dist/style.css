@@ -173,12 +173,36 @@ textarea:not([rows]) {
 }
 
 /* UTILITIES */
+.visually-hidden {
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+}
+
 /* BASE STYLES */
 body {
   background-color: var(--clr-primary-300);
   color: var(--clr-primary-100);
   font-family: var(--ff-primary-300);
   text-transform: uppercase;
+  background-image: url("/assets/home/background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+@media (width > 43.75rem) {
+  body {
+    background-image: url("/assets/home/background-home-tablet.jpg");
+  }
+}
+@media (width > 56.25rem) {
+  body {
+    background-image: url("/assets/home/background-home-desktop.jpg");
+  }
 }
 
 /* HEADER STYLES */
