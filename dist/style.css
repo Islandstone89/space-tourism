@@ -114,6 +114,7 @@ textarea:not([rows]) {
 :root {
   /* Primitive properties */
   --clr-white: hsl(0 0 100%);
+  --clr-white-opacity: hsl(0 0 100% / .05);
   --clr-light-blue: hsl(231 77 90%);
   --clr-dark-blue: hsl(230 35 7);
   --ff-serif: "Bellefair";
@@ -144,6 +145,7 @@ textarea:not([rows]) {
   --space-128px: 128px;
   /* Semantic properties */
   --clr-primary-100: var(--clr-white);
+  --clr-primary-100_opacity: var(--clr-white-opacity);
   --clr-primary-200: var(--clr-light-blue);
   --clr-primary-300: var(--clr-dark-blue);
   --ff-primary-100: var(--ff-serif);
@@ -214,6 +216,16 @@ body {
   justify-content: space-between;
 }
 
+.primary-nav {
+  background-color: var(--clr-primary-100_opacity);
+}
+@supports ((-webkit-backdrop-filter: blur(1.5rem)) or (backdrop-filter: blur(1.5rem))) {
+  .primary-nav {
+    -webkit-backdrop-filter: blur(1.5rem);
+            backdrop-filter: blur(1.5rem);
+  }
+}
+
 .primary-nav__list {
   display: flex;
   flex-direction: row;
@@ -238,5 +250,5 @@ body {
 
 .primary__nav__item {
   padding-block: var(--space-400);
-  border-bottom: 3px solid var(--clr-primary-100);
+  border-bottom: 3px solid var;
 }/*# sourceMappingURL=style.css.map */

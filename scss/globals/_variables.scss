@@ -5,6 +5,7 @@
     /* Primitive properties */
 
     --clr-white: hsl(0 0 100%);
+    --clr-white-opacity: hsl(0 0 100% / .05);
     --clr-light-blue: hsl(231 77 90%);
     --clr-dark-blue: hsl(230 35 7);
 
@@ -41,6 +42,7 @@
     /* Semantic properties */
 
     --clr-primary-100: var(--clr-white);
+    --clr-primary-100_opacity: var(--clr-white-opacity);
     --clr-primary-200: var(--clr-light-blue);
     --clr-primary-300: var(--clr-dark-blue);
 
