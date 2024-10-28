@@ -1,4 +1,6 @@
 
+@use '../globals/utilities' as util;
+
 /* HEADER STYLES */
 
 .primary-header {
@@ -9,11 +11,30 @@
 
 .primary-nav__list {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     gap: var(--space-600);
+    padding-inline: var(--space-800);
+    
+
+    @media (width < 35rem) {
+        flex-direction: column;
+        gap: var(--space-400);
+        position: fixed;
+        inset: 0 0 0 30%;
+        z-index: 999;
+        background-color: black;
+    }
+    
+   
 }
 
 .primary__nav__link {
     display: flex;
     gap: var(--space-150);
+    
+}
+
+.primary__nav__item {
+    padding-block: var(--space-400);
+    border-bottom: 3px solid var(--clr-primary-100);
 }
