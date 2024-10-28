@@ -8,6 +8,7 @@ body {
     color: var(--clr-primary-100);
     font-family: var(--ff-primary-300);
     text-transform: uppercase;
+    min-height: 100svh;
 
     background-image: url('/assets/home/background-home-mobile.jpg');
     background-repeat: no-repeat;
