@@ -1,0 +1,16 @@
+
+.main-heading {
+    font-size: clamp(var(--fs-200), 0.37rem + 3.16vw, var(--fs-300));
+    letter-spacing: .2em;
+}
+
+.space {
+    display: block;
+    padding-block: var(--space-300);
+    font-size: clamp(var(--fs-600), 1.63rem + 16.84vw, var(--fs-800));
+    color: var(--clr-primary-100);
+}
+
+.tagline {
+    line-height: 1.8;
+}

@@ -5,7 +5,7 @@
 
 body {
     background-color: var(--clr-primary-300);
-    color: var(--clr-primary-100);
+    color: var(--clr-primary-200);
     font-family: var(--ff-primary-300);
     text-transform: uppercase;
     min-height: 100svh;
@@ -21,5 +21,25 @@ body {
 
     @include util.breakpoint(large) {
         background-image: url('/assets/home/background-home-desktop.jpg');
+    }
+}
+
+.container {
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+.main {
+    padding-block: var(--space-300);
+    padding-inline: var(--space-300);
+    
+    @include util.breakpoint(medium) {
+        padding-block: var(--space-500);
+        padding-inline: var(--space-500);
+    }
+
+    @include util.breakpoint(large) {
+        padding-block: var(--space-600);
+        padding-inline: var(--space-1600);
     }
 }
