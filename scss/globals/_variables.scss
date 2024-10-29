@@ -5,9 +5,11 @@
     /* Primitive properties */
 
     --clr-white: hsl(0 0 100%);
-    --clr-white-opacity: hsl(0 0 100% / .05);
+    --clr-white-opacity1: hsl(0 0 100% / .05);
+    --clr-white-opacity2: hsl(0 0 100% / .25);
     --clr-light-blue: hsl(231 77 90%);
     --clr-dark-blue: hsl(230 35 7);
+    --clr-dark-grey: hsl(229 14 16);
 
     --ff-serif: 'Bellefair';
     --ff-sans-serif1: 'Barlow';
@@ -18,6 +20,8 @@
 
     --fs-14px: .875rem;
     --fs-16px: 1rem;
+    --fs-18px: 1.125rem;
+    --fs-24px: 1.5rem;
     --fs-28px: 1.75rem;
     --fs-32px: 2rem;
     --fs-56px: 3.5rem;
@@ -43,9 +47,12 @@
     /* Semantic properties */
 
     --clr-primary-100: var(--clr-white);
-    --clr-primary-100_opacity: var(--clr-white-opacity);
     --clr-primary-200: var(--clr-light-blue);
     --clr-primary-300: var(--clr-dark-blue);
+
+    --clr-accent-100: var(--clr-white-opacity1);
+    --clr-accent-200: var(--clr-white-opacity2);
+    --clr-accent-300: var(--clr-dark-grey);
 
     --ff-primary-100: var(--ff-serif);
     --ff-primary-200: var(--ff-sans-serif1);
@@ -56,12 +63,14 @@
 
     --fs-100: var(--fs-14px);
     --fs-200: var(--fs-16px);
-    --fs-300: var(--fs-28px);
-    --fs-400: var(--fs-32px);
-    --fs-500: var(--fs-56px);
-    --fs-600: var(--fs-80px);
-    --fs-700: var(--fs-100px);
-    --fs-800: var(--fs-144px);
+    --fs-300: var(--fs-18px);
+    --fs-400: var(--fs-24px);
+    --fs-500: var(--fs-28px);
+    --fs-600: var(--fs-32px);
+    --fs-700: var(--fs-56px);
+    --fs-800: var(--fs-80px);
+    --fs-900: var(--fs-100px);
+    --fs-1000: var(--fs-144px);
 
     --space-25: var(--space-2px);
     --space-50: var(--space-4px);

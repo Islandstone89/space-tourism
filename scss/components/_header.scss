@@ -10,12 +10,12 @@
 }
 
 .primary-nav {
-    background-color: var(--clr-primary-100_opacity);
+    position: relative;
+    background-color: var(--clr-accent-100);
 
     @supports (backdrop-filter: blur(1.5rem)) {
         backdrop-filter: blur(1.5rem);
     }
-    
 }
 
 .primary-nav__list {
@@ -46,6 +46,10 @@
 }
 
 .mobile-nav-toggle {
+    position: absolute;
+    top: 20%;
+    right: 0;
     border: transparent;
-    display: none;
+    background-color: transparent;
+    display: nones;
 }

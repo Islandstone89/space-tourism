@@ -15,11 +15,18 @@
       <img src="assets/shared/logo.svg" alt="Space Tourism - Home" class="logo">
     </div><!-- end logo-wrapper -->
 
-    <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="primaryNavList">
-      <span class="visually-hidden">Menu</span>
-    </button>
-
     <nav class="primary-nav">
+
+      <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="primaryNavList">
+        <span class="visually-hidden">Menu</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" class="close-menu-icon">
+          <g fill="#D0D6F9" fill-rule="evenodd">
+            <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/>
+            <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/>
+          </g>
+        </svg>
+      </button><!-- end mobile-nav-toggle -->
+
       <ul class="primary-nav__list" id="primaryNavList">
 
         <li class="primary__nav__item">
@@ -43,14 +50,18 @@
   </header><!-- end primary-header -->
 
   <main class="main container">
-
     <div class="intro">
-      <h1 class="main-heading">So, you want to travel to <span class="space">Space</span></h1>
-      <p class="tagline">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+
+      <div class="intro__text">
+        <h1 class="main-heading">So, you want to travel to <span class="space">Space</span></h1>
+        <p class="tagline">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+      </div><!-- end intro__text -->
+
+      <div class="intro__link">
+        <a href="/" class="explore">Explore</a>
+      </div><!--end intro__link -->
+
     </div><!-- end intro -->
-
-    <a href="/" class="explore">Explore</a>
-
   </main><!-- end main -->
 </body>
 </html>
