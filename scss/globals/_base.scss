@@ -23,6 +23,13 @@ body {
     @include util.breakpoint(large) {
         background-image: url('/assets/home/background-home-desktop.jpg');
     }
+
+    &:has(.mobile-nav-toggle)[aria-expanded="true"] {
+        
+        .primary-nav__list {
+            transform: translateX(0%);
+        }
+    }
 }
 
 .container {

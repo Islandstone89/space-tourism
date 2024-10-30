@@ -35,6 +35,7 @@
 }
 
 .explore {
+    position: relative;
     --width: 144px;
     --height: 144px;
     display: flex;
@@ -46,14 +47,31 @@
     width: var(--width);
     height: var(--height);
     border-radius: 50%;
+    aspect-ratio: 1;
     box-shadow: 0 4px 4px 0 var(--clr-accent-200);
 
-    @include util.breakpoint(medium) {
-        --width: 272px;
-        --height: 272px;
+        @include util.breakpoint(medium) {
+            --width: 272px;
+            --height: 272px;
+        }
+
+        @include util.breakpoint(large) {
+            justify-self: self-end;
+        }
     }
 
-    @include util.breakpoint(large) {
-        justify-self: self-end;
+    .explore::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            inset: 0;
+            background-color: var(--clr-accent-100);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 500ms linear, transform 750ms ease-in-out;
     }
-}
+
+    .explore:is(:hover, :focus)::after {
+        transform: scale(1.5);
+        opacity: 1;
+    }
