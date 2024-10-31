@@ -13,11 +13,12 @@ $breakpoints: (
         @content;
     }
 }
-.visually-hidden {
+
+.visually-hidden:not(:focus):not(:active) {
     clip-path: inset(50%);
-    position: absolute;
+    height: 1px;
     overflow: hidden;
+    position: absolute;
     white-space: nowrap;
     width: 1px;
-    height: 1px;
 }

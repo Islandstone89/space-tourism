@@ -10,7 +10,9 @@
   <script defer src="/app/js/script.js"></script>
 </head>
 <body>
-  <header class="primary-header container">
+  <header class="primary-header">
+
+    <a href="#mainContent" class="skip-to-content visually-hidden">Skip to main content</a>
 
     <div class="logo-wrapper">
       <img src="assets/shared/logo.svg" alt="Space Tourism - Home" class="logo">
@@ -25,26 +27,26 @@
       <ul class="primary-nav__list" id="primaryNavList">
 
         <li class="primary__nav__item">
-          <a href="/" class="primary__nav__link"><span class="primary__nav__number">00</span> Home</a>
+          <a href="/" class="primary__nav__link"><span class="primary__nav__number" aria-hidden="true">00</span> Home</a>
         </li><!-- end primary__nav__item -->
 
         <li class="primary__nav__item">
-          <a href="/" class="primary__nav__link"><span class="primary__nav__number">01</span> Destination</a>
+          <a href="/" class="primary__nav__link"><span class="primary__nav__number" aria-hidden="true">01</span> Destination</a>
         </li><!-- end primary__nav__item -->
 
         <li class="primary__nav__item">
-          <a href="/" class="primary__nav__link"><span class="primary__nav__number">02</span> Crew</a>
+          <a href="/" class="primary__nav__link"><span class="primary__nav__number" aria-hidden="true">02</span> Crew</a>
         </li><!-- end primary__nav__item -->
 
         <li class="primary__nav__item">
-          <a href="/" class="primary__nav__link"><span class="primary__nav__number">03</span> Technology</a>
+          <a href="/" class="primary__nav__link"><span class="primary__nav__number" aria-hidden="true">03</span> Technology</a>
         </li><!-- end primary__nav__item -->
 
       </ul><!-- end primary-nav__list -->
     </nav><!-- end primary-nav -->
   </header><!-- end primary-header -->
 
-  <main class="main container">
+  <main class="main" id="mainContent">
     <div class="intro">
 
       <div class="intro__text">

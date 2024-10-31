@@ -7,6 +7,33 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-block-start: var(--space-300);
+    padding-block-end: var(--space-300);
+    padding-inline-start: var(--space-300);
+
+    @include util.breakpoint(medium) {
+        padding-block-start: var(--space-300);
+        padding-block-end: var(--space-300);
+        padding-inline-start: var(--space-500);
+    }
+
+    @include util.breakpoint(large) {
+        padding-block-start: var(--space-800);
+        padding-block-end: var(--space-300);
+        padding-inline-start: var(--space-1200);
+
+   /*      &::after {
+            content: '';
+             display: block;
+             position: relative;
+             height: 1px;
+             width: 100%;
+             margin-right: -2.5rem;
+             background-color: var(--accent-200);
+             background-color: red;
+             order: 1;
+        } */
+    }
 }
 
 .primary-nav {
