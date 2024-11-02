@@ -19,19 +19,20 @@
 }
 
 .main-heading {
-    font-size: clamp(var(--fs-200), 0.37rem + 3.16vw, var(--fs-500));
+    font-size: clamp(var(--fs-100), 0.37rem + 3.16vw, var(--fs-250));
     letter-spacing: .2em;
 }
 
 .space {
     display: block;
     padding-block: var(--space-300);
-    font-size: clamp(var(--fs-800), 1.63rem + 16.84vw, var(--fs-1000));
+    font-size: clamp(var(--fs-900), 1.63rem + 16.84vw, var(--fs-1700));
     color: var(--clr-primary-100);
 }
 
 .tagline {
     line-height: 1.8;
+    font-size: clamp(var(--fs-100), 0.93rem + 0.31vw, var(--fs-300));
 }
 
 .explore {
@@ -41,7 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: clamp(var(--fs-300), 0.39rem + 3.68vw, var(--fs-600));
+    font-size: clamp(var(--fs-125), 0.39rem + 3.68vw, var(--fs-300));
     background-color: var(--clr-primary-100);
     color: var(--clr-primary-300);
     width: var(--width);

@@ -22,3 +22,11 @@ $breakpoints: (
     white-space: nowrap;
     width: 1px;
 }
+
+.flow {
+    --flow-space: var(--space-200);
+}
+
+.flow > * + * {
+    margin-block-start: var(--flow-space, 1em);
+}

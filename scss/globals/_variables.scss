@@ -21,12 +21,14 @@
     --fs-14px: .875rem;
     --fs-16px: 1rem;
     --fs-18px: 1.125rem;
+
+    --fs-20px: 1.25rem;
     --fs-24px: 1.5rem;
     --fs-28px: 1.75rem;
     --fs-32px: 2rem;
     --fs-56px: 3.5rem;
     --fs-80px: 5rem;
-    --fs-100px: 6.25rem;
+    --fs-96px: 6rem;
     --fs-144px: 9rem;
 
     --space-2px: 2px;
@@ -61,16 +63,17 @@
     --fw-regular: var(--fw-400);
     --fw-bold: var(--fw-700);
 
-    --fs-100: var(--fs-14px);
-    --fs-200: var(--fs-16px);
-    --fs-300: var(--fs-18px);
-    --fs-400: var(--fs-24px);
-    --fs-500: var(--fs-28px);
-    --fs-600: var(--fs-32px);
-    --fs-700: var(--fs-56px);
-    --fs-800: var(--fs-80px);
-    --fs-900: var(--fs-100px);
-    --fs-1000: var(--fs-144px);
+    --fs-75: var(--fs-14px);
+    --fs-100: var(--fs-16px);
+    --fs-125: var(--fs-18px);
+    --fs-150: var(--fs-20px);
+    --fs-200: var(--fs-24px);
+    --fs-250: var(--fs-28px);
+    --fs-300: var(--fs-32px);
+    --fs-600: var(--fs-56px);
+    --fs-900: var(--fs-80px);
+    --fs-1100: var(--fs-96px);
+    --fs-1700: var(--fs-144px);
 
     --space-25: var(--space-2px);
     --space-50: var(--space-4px);

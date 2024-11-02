@@ -1,0 +1,70 @@
+
+@use '../globals/utilities' as util;
+
+.main__destination  {
+    text-align: center;
+
+    @include util.breakpoint(medium) {
+        text-align: initial;
+    }
+}
+
+.destination__heading {
+    display: flex;
+    align-items: center;
+    gap: var(--space-300);
+    color: var(--clr-primary-100);
+    font-size: clamp(var(--fs-100), 0.62rem + 1.87vw, var(--fs-250));
+}
+
+.destination__heading-number {
+    color: var(--clr-accent-200);
+}
+
+.destination__nav__list {
+    display: flex;
+    align-items: center;
+    gap: var(--space-400);
+}
+
+.destination__info {
+    border-block-end: 1px solid var(--clr-accent-200);
+    padding-block: var(--space-300);
+
+    @include util.breakpoint(large) {
+        padding-block: var(--space-500);
+    }
+}
+
+.destination__info__heading {
+    color: var(--clr-primary-100);
+    font-size: clamp(var(--fs-600), 2.25rem + 6.25vw, var(--fs-1100));
+}
+
+.destination__info__text {
+    font-size: clamp(var(--fs-100), 0.93rem + 0.31vw, var(--fs-125));
+}
+
+.destination__travel {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-300);
+    padding-block-start: var(--space-300);
+    padding-block-end: var(--space-300);
+
+    @include util.breakpoint(medium) {
+        flex-direction: row;
+        gap: var(--space-800);
+        padding-block-start: var(--space-300);
+        padding-block-end: var(--space-600);
+    }
+
+    @include util.breakpoint(large) {
+        padding-block-start: var(--space-500);
+        padding-block-end: var(--space-1600);
+    }
+}
+
+.destination__travel__text {
+    font-size: var(--fs-250);
+}
