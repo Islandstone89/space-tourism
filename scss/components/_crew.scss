@@ -1,0 +1,44 @@
+@use '../globals/utilities' as util;
+
+.main__crew  {
+    text-align: center;
+    padding-block: var(--space-300);
+    padding-inline: var(--space-300);
+
+    @include util.breakpoint(medium) {
+        text-align: initial;
+        padding-block: var(--space-500);
+        padding-inline: var(--space-500);
+    }
+
+    @include util.breakpoint(large) {
+        padding-block: var(--space-600);
+        padding-inline: var(--space-1600);
+    }
+}
+
+.crew__content {
+    --flow-space: var(--space-800);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-400);
+
+    @include util.breakpoint(large) {
+        --flow-space: var(--space-1600);
+        flex-direction: row;
+    }
+}
+
+.crew__text__heading {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-100);
+
+    @include util.breakpoint(medium) {
+        gap: var(--space-200);
+    }
+}
+
+.tagline__crew {
+    --flow-space: var(--space-300);
+}

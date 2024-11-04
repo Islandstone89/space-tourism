@@ -3,26 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Space tourism website</title>
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="/dist/style.css">
+  <script defer src="/app/js/script.js"></script>
 </head>
 <body>
+  <header class="primary-header">
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <a href="#mainContent" class="skip-to-content visually-hidden">Skip to main content</a>
 
-  02 Meet your crew
+    <div class="logo-wrapper">
+      <img src="assets/shared/logo.svg" alt="Space Tourism - Home" class="logo">
+    </div><!-- end logo-wrapper -->
 
-  Pilot
-  Victor Glover
+    <nav class="primary-nav">
 
-  Pilot on the first operational flight of the SpaceX Crew Dragon to the 
-  International Space Station. Glover is a commander in the U.S. Navy where 
-  he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
-  station systems flight engineer. 
+      <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="primaryNavList">
+        <span class="visually-hidden">Menu</span>
+      </button><!-- end mobile-nav-toggle -->
+
+      <ul class="primary-nav__list" id="primaryNavList">
+
+        <li class="primary__nav__item">
+          <a href="/" class="primary__nav__link"><span class="primary__nav__number" aria-hidden="true">00</span> Home</a>
+        </li><!-- end primary__nav__item -->
+
+        <li class="primary__nav__item">
+          <a href="/destination-moon.html" class="primary__nav__link"><span class="primary__nav__number" aria-hidden="true">01</span> Destination</a>
+        </li><!-- end primary__nav__item -->
+
+        <li class="primary__nav__item">
+          <a href="crew-commander.html" class="primary__nav__link" aria-current="page"><span class="primary__nav__number" aria-hidden="true">02</span> Crew</a>
+        </li><!-- end primary__nav__item -->
+
+        <li class="primary__nav__item">
+          <a href="/" class="primary__nav__link"><span class="primary__nav__number" aria-hidden="true">03</span> Technology</a>
+        </li><!-- end primary__nav__item -->
+
+      </ul><!-- end primary-nav__list -->
+    </nav><!-- end primary-nav -->
+  </header><!-- end primary-header -->
+
+  <main class="main main__crew flow" id="mainContent">
+    
+    <h1 class="site__heading crew__heading"><span class="site__heading-number destination__heading-number" aria-hidden="true">02</span> Meet your crew</h1>
+
+    <div class="crew__content">
+
+      <div class="crew__text flow">
+        <h2 class="crew__text__heading"><span class="crew__role">Pilot</span> Victor Glover</h2>
+        <p class="tagline tagline__crew">Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18. He was a crew member of Expedition 64, and served as a station systems flight engineer. </p>
+      </div><!--end crew__text -->
+
+      <div class="crew__image-wrapper">
+        <img src="/assets/crew/image-victor-glover.png" alt="Pilot Victor Glover." class="crew__image">
+      </div><!-- end crew_image-wrapper -->
+
+    </div><!-- end crew__content -->
+  </main><!-- end main -->
 </body>
 </html>

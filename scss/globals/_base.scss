@@ -38,8 +38,6 @@ body {
     margin-inline: auto;
 }
 
-
-
 .skip-to-content {
     position: absolute;
     top: 0;
@@ -53,4 +51,26 @@ body {
     &:is(:focus) {
         transform: translateY(0);
     }
+}
+
+.site__heading {
+    display: flex;
+    align-items: center;
+    gap: var(--space-300);
+    color: var(--clr-primary-100);
+    font-size: clamp(var(--fs-100), 0.62rem + 1.87vw, var(--fs-250));
+
+    @include util.breakpoint(medium) {
+        text-align: initial;
+    }
+}
+
+.site__heading-number {
+    color: var(--clr-accent-200);
+}
+
+
+.tagline {
+    font-size: clamp(var(--fs-100), 0.93rem + 0.31vw, var(--fs-125));
+    max-width: 70ch;
 }
