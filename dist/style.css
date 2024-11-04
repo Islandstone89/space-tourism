@@ -339,10 +339,9 @@ body:has(.mobile-nav-toggle)[aria-expanded=true] .primary-nav__list {
 .primary__nav__link {
   display: flex;
   gap: var(--space-150);
-}
-
-.primary__nav__item {
   padding-block: var(--space-400);
+}
+.primary__nav__link[aria-current=page] {
   border-bottom: 3px solid var(--clr-primary-100);
 }
 
@@ -470,6 +469,13 @@ body:has(.mobile-nav-toggle)[aria-expanded=true] .primary-nav__list {
   display: flex;
   align-items: center;
   gap: var(--space-400);
+}
+
+.destination__nav__link[aria-current=page] {
+  text-decoration-line: underline;
+  text-decoration-color: var(--clr-primary-100);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 1px;
 }
 
 .destination__info {

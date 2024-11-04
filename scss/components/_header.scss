@@ -67,11 +67,11 @@
 .primary__nav__link {
     display: flex;
     gap: var(--space-150);
-}
-
-.primary__nav__item {
     padding-block: var(--space-400);
-    border-bottom: 3px solid var(--clr-primary-100);
+
+    &[aria-current="page"] {
+        border-bottom: 3px solid var(--clr-primary-100);
+    }
 }
 
 .mobile-nav-toggle {
