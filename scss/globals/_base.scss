@@ -38,20 +38,7 @@ body {
     margin-inline: auto;
 }
 
-.main {
-    padding-block: var(--space-300);
-    padding-inline: var(--space-300);
-    
-    @include util.breakpoint(medium) {
-        padding-block: var(--space-500);
-        padding-inline: var(--space-500);
-    }
 
-    @include util.breakpoint(large) {
-        padding-block: var(--space-1600);
-        padding-inline: var(--space-1600);
-    }
-}
 
 .skip-to-content {
     position: absolute;

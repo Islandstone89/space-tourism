@@ -3,9 +3,36 @@
 
 .main__destination  {
     text-align: center;
+    padding-block: var(--space-300);
+    padding-inline: var(--space-300);
 
     @include util.breakpoint(medium) {
         text-align: initial;
+        padding-block: var(--space-500);
+        padding-inline: var(--space-500);
+    }
+
+    @include util.breakpoint(large) {
+        padding-block: var(--space-600);
+        padding-inline: var(--space-1600);
+    }
+}
+
+.destination__content {
+    --flow-space: var(--space-600);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-700);
+
+    @include util.breakpoint(medium) {
+        --flow-space: var(--space-800);
+    }
+
+    @include util.breakpoint(large) {
+        --flow-space: var(--space-1600);
+        flex-direction: row;
+        gap: var(--space-900);
     }
 }
 
@@ -15,6 +42,10 @@
     gap: var(--space-300);
     color: var(--clr-primary-100);
     font-size: clamp(var(--fs-100), 0.62rem + 1.87vw, var(--fs-250));
+
+    @include util.breakpoint(medium) {
+        text-align: initial;
+    }
 }
 
 .destination__heading-number {
@@ -53,6 +84,7 @@
 
 .destination__info__text {
     font-size: clamp(var(--fs-100), 0.93rem + 0.31vw, var(--fs-125));
+    max-width: 60ch;
 }
 
 .destination__travel {
