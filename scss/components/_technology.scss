@@ -76,42 +76,6 @@
     }
 }
 
-.technology__nav__link {
-    --bg-clr: transparent;
-    --clr: var(--clr-primary-100);
-    --outline-clr: var(--clr-accent-200);
-    --width-size: var(--size-500);
-    --height-size: var(--size-500);
-    font-size: var(--fs-125);
-    font-family: var(--ff-primary-100);
-    background-color: var(--bg-clr);
-    color: var(--clr);
-    outline: 1px solid var(--outline-clr);
-    border-radius: 50%;
-    width: var(--width-size);
-    height: var(--height-size);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    @include util.breakpoint(medium) {
-        font-size: var(--fs-200);
-        --width-size: var(--size-700);
-        --height-size: var(--size-700);
-    }
-
-    @include util.breakpoint(large) {
-        font-size: var(--fs-300);
-        --width-size: var(--size-1000);
-        --height-size: var(--size-1000);
-    }
-
-    &[aria-current="page"] {
-        --bg-clr: var(--clr-primary-100);
-        --clr: var(--clr-primary-300);
-        --outline-clr: var(--clr-accent-100);
-    }
-}
 
 .technology__text__heading {
     display: flex;

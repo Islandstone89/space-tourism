@@ -32,7 +32,7 @@
     @include util.breakpoint(large) {
         --flow-space: var(--space-1600);
         flex-direction: row;
-        gap: var(--space-900);
+        gap: var(--space-1200);
     }
 }
 
