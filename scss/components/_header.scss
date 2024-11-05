@@ -21,18 +21,6 @@
         padding-block-start: var(--space-400);
         padding-block-end: var(--space-300);
         padding-inline-start: var(--space-1200);
-
-   /*      &::after {
-            content: '';
-             display: block;
-             position: relative;
-             height: 1px;
-             width: 100%;
-             margin-right: -2.5rem;
-             background-color: var(--accent-200);
-             background-color: red;
-             order: 1;
-        } */
     }
 }
 
@@ -43,6 +31,23 @@
     @supports (backdrop-filter: blur(1.5rem)) {
         backdrop-filter: blur(1.5rem);
     }
+
+        &::before {
+             content: '';
+             display: block;
+             position: absolute;
+             right: 100%;
+             top: 50%;
+             height: 1px;
+             width: 100%;
+             margin-right: -2.5rem;
+             background-color: hsl(0 0 100% / .25);;
+
+             @media (width < 70rem) {
+                display: none;
+            }
+        }
+            
 }
 
 .primary-nav__list {

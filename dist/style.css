@@ -349,17 +349,6 @@ body:has(.mobile-nav-toggle)[aria-expanded=true] .primary-nav__list {
     padding-block-start: var(--space-400);
     padding-block-end: var(--space-300);
     padding-inline-start: var(--space-1200);
-    /*      &::after {
-             content: '';
-              display: block;
-              position: relative;
-              height: 1px;
-              width: 100%;
-              margin-right: -2.5rem;
-              background-color: var(--accent-200);
-              background-color: red;
-              order: 1;
-         } */
   }
 }
 
@@ -371,6 +360,22 @@ body:has(.mobile-nav-toggle)[aria-expanded=true] .primary-nav__list {
   .primary-nav {
     -webkit-backdrop-filter: blur(1.5rem);
             backdrop-filter: blur(1.5rem);
+  }
+}
+.primary-nav::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  height: 1px;
+  width: 100%;
+  margin-right: -2.5rem;
+  background-color: hsla(0, 0%, 100%, 0.25);
+}
+@media (width < 70rem) {
+  .primary-nav::before {
+    display: none;
   }
 }
 
