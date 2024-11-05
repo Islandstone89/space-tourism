@@ -9,80 +9,84 @@
     <link rel="stylesheet" href="/dist/style.css">
     <script defer src="/app/js/script.js"></script>
   </head>
-<body>
-  <header class="primary-header">
+  <body data-category="technology">
+    <header class="primary-header">
 
-    <a href="#mainContent" class="skip-to-content visually-hidden">Skip to main content</a>
+      <a href="#mainContent" class="skip-to-content visually-hidden">Skip to main content</a>
 
-    <div class="logo-wrapper">
-      <img src="assets/shared/logo.svg" alt="Space Tourism - Home" class="logo">
-    </div><!-- end logo-wrapper -->
+      <div class="logo-wrapper">
+        <img src="assets/shared/logo.svg" alt="Space Tourism - Home" class="logo" width="48" height="48">
+      </div><!-- end logo-wrapper -->
 
-    <nav class="primary-nav">
+      <nav class="primary-nav">
 
-      <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="primaryNavList">
-        <span class="visually-hidden">Menu</span>
-      </button><!-- end mobile-nav-toggle -->
+        <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="primaryNavList">
+          <span class="visually-hidden">Menu</span>
+        </button><!-- end mobile-nav-toggle -->
 
-      <ul class="primary-nav__list" id="primaryNavList">
+        <ul class="primary-nav__list" id="primaryNavList">
 
-        <li class="primary__nav__item">
-          <a href="/" class="primary__nav__link"><span class="primary__nav__number" aria-hidden="true">00</span> Home</a>
-        </li><!-- end primary__nav__item -->
+          <li class="primary__nav__item">
+            <a href="/" class="primary__nav__link"><span class="primary__nav__number" aria-hidden="true">00</span> Home</a>
+          </li><!-- end primary__nav__item -->
 
-        <li class="primary__nav__item">
-          <a href="destination-moon.html" class="primary__nav__link"><span class="primary__nav__number" aria-hidden="true">01</span> Destination</a>
-        </li><!-- end primary__nav__item -->
+          <li class="primary__nav__item">
+            <a href="destination-moon.html" class="primary__nav__link"><span class="primary__nav__number" aria-hidden="true">01</span> Destination</a>
+          </li><!-- end primary__nav__item -->
 
-        <li class="primary__nav__item">
-          <a href="crew-commander.html" class="primary__nav__link"><span class="primary__nav__number" aria-hidden="true">02</span> Crew</a>
-        </li><!-- end primary__nav__item -->
+          <li class="primary__nav__item">
+            <a href="crew-commander.html" class="primary__nav__link"><span class="primary__nav__number" aria-hidden="true">02</span> Crew</a>
+          </li><!-- end primary__nav__item -->
 
-        <li class="primary__nav__item">
-          <a href="technology-vehicle.html" class="primary__nav__link" aria-current="page"><span class="primary__nav__number" aria-hidden="true">03</span> Technology</a>
-        </li><!-- end primary__nav__item -->
+          <li class="primary__nav__item">
+            <a href="technology-vehicle.html" class="primary__nav__link" aria-current="page"><span class="primary__nav__number" aria-hidden="true">03</span> Technology</a>
+          </li><!-- end primary__nav__item -->
 
-      </ul><!-- end primary-nav__list -->
-    </nav><!-- end primary-nav -->
-  </header><!-- end primary-header -->
+        </ul><!-- end primary-nav__list -->
+      </nav><!-- end primary-nav -->
+    </header><!-- end primary-header -->
 
-  <main class="main main__technology flow" id="mainContent">
-    
-    <h1 class="site__heading technology__heading"><span class="site__heading-number technology__heading-number" aria-hidden="true">03</span> Space launch 101</h1>
+    <main class="main main__technology flow" id="mainContent">
+      
+      <h1 class="site__heading technology__heading"><span class="site__heading-number technology__heading-number" aria-hidden="true">03</span> Space launch 101</h1>
 
-    <div class="technology__content">
+      <div class="technology__content">
 
-      <div class="technology__image-wrapper">
-        <img src="/assets/technology/image-launch-vehicle-landscape.jpg" alt="A space launch vehicle." class="technology__image">
-      </div><!-- end technology_image-wrapper -->
+        <div class="technology__image-wrapper">
+          <picture>
+            <source srcset="/assets/technology/image-launch-vehicle-landscape.jpg" media="(min-width: 700px)">
+            <source srcset="/assets/technology/image-launch-vehicle-portrait.jpg" media="(min-width: 900px)">
+            <img src="/assets/technology/image-launch-vehicle-portrait.jpg" alt="A space launch vehicle." class="technology__image">
+          </picture>
+        </div><!-- end technology_image-wrapper -->
 
-      <div class="technology__text">
-        
-        <nav class="technology__nav">
-          <ul class="technology__nav__list">
+        <div class="technology__text">
 
-            <li class="technology__nav__item">
-              <a href="technology-vehicle.html" class="technology__nav__link" aria-current="page" aria-label="Go to launch vehicle page.">1</a>
-            </li><!-- end technology__nav__item-->
+          <nav class="technology__nav">
+            <ul class="technology__nav__list">
 
-            <li class="technology__nav__item">
-              <a href="technology-spaceport.html" class="technology__nav__link" aria-label="Go to spaceport page.">2</a>
-            </li><!-- end technology__nav__item-->
+              <li class="technology__nav__item">
+                <a href="technology-vehicle.html" class="technology__nav__link" aria-current="page" aria-label="Go to launch vehicle page.">1</a>
+              </li><!-- end technology__nav__item-->
 
-            <li class="technology__nav__item">
-              <a href="technology-capsule.html" class="technology__nav__link" aria-label="Go to space capsule page.">3</a>
-            </li><!-- end technology__nav__item-->
+              <li class="technology__nav__item">
+                <a href="technology-spaceport.html" class="technology__nav__link" aria-label="Go to spaceport page.">2</a>
+              </li><!-- end technology__nav__item-->
 
-          </ul><!-- end technology__nav__list -->
-        </nav><!-- end technology__nav -->
+              <li class="technology__nav__item">
+                <a href="technology-capsule.html" class="technology__nav__link" aria-label="Go to space capsule page.">3</a>
+              </li><!-- end technology__nav__item-->
 
-        <div class="technology__info flow">
-          <h2 class="technology__text__heading"><span class="technology__terminology">The terminology...</span> Launch vehicle</h2>
-          <p class="tagline tagline__technology">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
-        </div><!-- end technology__info -->
+            </ul><!-- end technology__nav__list -->
+          </nav><!-- end technology__nav -->
 
-      </div><!--end technology__text -->
-    </div><!-- end technology__content -->
-  </main><!-- end main -->  
+          <div class="technology__info flow">
+            <h2 class="technology__text__heading"><span class="technology__terminology">The terminology...</span> Launch vehicle</h2>
+            <p class="tagline tagline__technology">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+          </div><!-- end technology__info -->
+
+        </div><!--end technology__text -->
+      </div><!-- end technology__content -->
+    </main><!-- end main -->  
 </body>
 </html>

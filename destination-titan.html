@@ -1,107 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frontend Mentor | Space tourism website</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Space tourism website</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="/dist/style.css">
-  <script defer src="/app/js/script.js"></script>
-</head>
-<body>
-  <header class="primary-header">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="/dist/style.css">
+    <script defer src="/app/js/script.js"></script>
+  </head>
+  <body data-category="destination">
+    <header class="primary-header">
 
-    <a href="#mainContent" class="skip-to-content visually-hidden">Skip to main content</a>
+      <a href="#mainContent" class="skip-to-content visually-hidden">Skip to main content</a>
 
-    <div class="logo-wrapper">
-      <img src="assets/shared/logo.svg" alt="Space Tourism - Home" class="logo">
-    </div><!-- end logo-wrapper -->
+      <div class="logo-wrapper">
+        <img src="assets/shared/logo.svg" alt="Space Tourism - Home" class="logo" width="48" height="48">
+      </div><!-- end logo-wrapper -->
 
-    <nav class="primary-nav">
+      <nav class="primary-nav">
 
-      <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="primaryNavList">
-        <span class="visually-hidden">Menu</span>
-      </button><!-- end mobile-nav-toggle -->
+        <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="primaryNavList">
+          <span class="visually-hidden">Menu</span>
+        </button><!-- end mobile-nav-toggle -->
 
-      <ul class="primary-nav__list" id="primaryNavList">
+        <ul class="primary-nav__list" id="primaryNavList">
 
-        <li class="primary__nav__item">
-          <a href="/" class="primary__nav__link"><span class="primary__nav__number" aria-hidden="true">00</span> Home</a>
-        </li><!-- end primary__nav__item -->
+          <li class="primary__nav__item">
+            <a href="/" class="primary__nav__link"><span class="primary__nav__number" aria-hidden="true">00</span> Home</a>
+          </li><!-- end primary__nav__item -->
 
-        <li class="primary__nav__item">
-          <a href="destination-moon.html" class="primary__nav__link" aria-current="page"><span class="primary__nav__number" aria-hidden="true">01</span> Destination</a>
-        </li><!-- end primary__nav__item -->
+          <li class="primary__nav__item">
+            <a href="destination-moon.html" class="primary__nav__link" aria-current="page"><span class="primary__nav__number" aria-hidden="true">01</span> Destination</a>
+          </li><!-- end primary__nav__item -->
 
-        <li class="primary__nav__item">
-          <a href="crew-commander.html" class="primary__nav__link"><span class="primary__nav__number" aria-hidden="true">02</span> Crew</a>
-        </li><!-- end primary__nav__item -->
+          <li class="primary__nav__item">
+            <a href="crew-commander.html" class="primary__nav__link"><span class="primary__nav__number" aria-hidden="true">02</span> Crew</a>
+          </li><!-- end primary__nav__item -->
 
-        <li class="primary__nav__item">
-          <a href="technology-vehicle.html" class="primary__nav__link"><span class="primary__nav__number" aria-hidden="true">03</span> Technology</a>
-        </li><!-- end primary__nav__item -->
+          <li class="primary__nav__item">
+            <a href="technology-vehicle.html" class="primary__nav__link"><span class="primary__nav__number" aria-hidden="true">03</span> Technology</a>
+          </li><!-- end primary__nav__item -->
 
-      </ul><!-- end primary-nav__list -->
-    </nav><!-- end primary-nav -->
-  </header><!-- end primary-header -->
+        </ul><!-- end primary-nav__list -->
+      </nav><!-- end primary-nav -->
+    </header><!-- end primary-header -->
 
-  <main class="main main__destination flow" id="mainContent">
+    <main class="main main__destination flow" id="mainContent">
+      
+      <h1 class="site__heading destination__heading"><span class="site__heading-number destination__heading-number" aria-hidden="true">01</span> Pick your destination</h1>
+
+      <div class="destination__content">
+
+        <div class="destination__image-wrapper">
+          <img src="/assets/destination/image-titan.png" alt="The moon seen from space" class="destination__image" width="445" height="445">
+        </div><!-- end destination__image-wrapper -->
+
+        <div class="destination__text">
+
+          <nav class="destination__nav">
+            <ul class="destination__nav__list">
+              
+              <li class="destination__nav__item">
+                <a href="/destination-moon.html" class="destination__nav__link">Moon</a>
+              </li><!-- end destination__nav__item -->
     
-    <h1 class="site__heading destination__heading"><span class="site__heading-number destination__heading-number" aria-hidden="true">01</span> Pick your destination</h1>
+              <li class="destination__nav__item">
+                <a href="/destination-mars.html" class="destination__nav__link">Mars</a>
+              </li><!-- end destination__nav__item -->
+    
+              <li class="destination__nav__item">
+                <a href="/destination-europa.html" class="destination__nav__link">Europa</a>
+              </li><!-- end destination__nav__item -->
+    
+              <li class="destination__nav__item">
+                <a href="/destination-titan.html" class="destination__nav__link" aria-current="page">Titan</a>
+              </li><!-- end destination__nav__item -->
+    
+            </ul><!-- end destination__nav-list -->
+          </nav><!-- end destination__nav -->
 
-    <div class="destination__content">
+          <div class="destination__info flow">
+            <h2 class="destination__info__heading">Titan</h2>
+            <p class="tagline tagline__destination">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
+          </div><!-- end tagline__destination -->
 
-      <div class="destination__image-wrapper">
-        <img src="/assets/destination/image-titan.png" alt="The moon seen from space" class="destination__image">
-      </div><!-- end destination__image-wrapper -->
+          <div class="destination__travel">
 
-      <div class="destination__text">
+            <div class="destination__distance">
+              <h3 class="destination__distance__heading">Avg. distance</h3>
+              <p class="destination__travel__text destination__distance__text">1.6 bil. km</p>
+            </div><!-- end destination__distance -->
 
-        <nav class="destination__nav">
-          <ul class="destination__nav__list">
-            
-            <li class="destination__nav__item">
-              <a href="/destination-moon.html" class="destination__nav__link">Moon</a>
-            </li><!-- end destination__nav__item -->
-  
-            <li class="destination__nav__item">
-              <a href="/destination-mars.html" class="destination__nav__link">Mars</a>
-            </li><!-- end destination__nav__item -->
-  
-            <li class="destination__nav__item">
-              <a href="/destination-europa.html" class="destination__nav__link">Europa</a>
-            </li><!-- end destination__nav__item -->
-  
-            <li class="destination__nav__item">
-              <a href="/destination-titan.html" class="destination__nav__link" aria-current="page">Titan</a>
-            </li><!-- end destination__nav__item -->
-  
-          </ul><!-- end destination__nav-list -->
-        </nav><!-- end destination__nav -->
+            <div class="destination__time">
+              <h3 class="destination__time__heading">Est. travel time</h3>
+              <p class="destination__travel__text destination__time__text">7 years</p>
+            </div><!-- end destination__time -->
 
-        <div class="destination__info flow">
-          <h2 class="destination__info__heading">Titan</h2>
-          <p class="tagline tagline__destination">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
-        </div><!-- end tagline__destination -->
+          </div><!-- end destination__travel -->
 
-        <div class="destination__travel">
+        </div><!--end destination__text -->
 
-          <div class="destination__distance">
-            <h3 class="destination__distance__heading">Avg. distance</h3>
-            <p class="destination__travel__text destination__distance__text">1.6 bil. km</p>
-          </div><!-- end destination__distance -->
-
-          <div class="destination__time">
-            <h3 class="destination__time__heading">Est. travel time</h3>
-            <p class="destination__travel__text destination__time__text">7 years</p>
-          </div><!-- end destination__time -->
-
-        </div><!-- end destination__travel -->
-
-      </div><!--end destination__text -->
-
-    </div><!-- end destination__content -->
-  </main><!-- end main -->
-</body>
+      </div><!-- end destination__content -->
+    </main><!-- end main -->
+  </body>
 </html>
