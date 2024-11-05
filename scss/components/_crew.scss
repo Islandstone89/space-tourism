@@ -62,3 +62,22 @@
 .tagline__crew {
     --flow-space: var(--space-300);
 }
+
+.crew__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--space-400);
+}
+
+
+.crew__nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-200);
+
+    @include util.breakpoint(large) {
+        justify-content: initial;
+    }
+}

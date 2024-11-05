@@ -28,8 +28,8 @@
     }
 
     @include util.breakpoint(large) {
-        --gap: var(--space-400);
         flex-direction: row;
+        justify-content: space-between;
     }
 }
 

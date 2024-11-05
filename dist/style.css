@@ -452,8 +452,8 @@ body:has(.mobile-nav-toggle)[aria-expanded=true] .primary-nav__list {
 }
 @media (width > 56.25rem) {
   .intro {
-    --gap: var(--space-400);
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -677,6 +677,25 @@ body:has(.mobile-nav-toggle)[aria-expanded=true] .primary-nav__list {
 
 .tagline__crew {
   --flow-space: var(--space-300);
+}
+
+.crew__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-400);
+}
+
+.crew__nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-200);
+}
+@media (width > 56.25rem) {
+  .crew__nav__list {
+    justify-content: initial;
+  }
 }
 
 .main__technology {
