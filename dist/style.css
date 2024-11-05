@@ -276,6 +276,7 @@ body:has(.mobile-nav-toggle)[aria-expanded=true] .primary-nav__list {
 .tagline {
   font-size: clamp(var(--fs-100), 0.93rem + 0.31vw, var(--fs-125));
   max-width: 70ch;
+  line-height: 1.8;
 }
 
 /* HEADER STYLES */
@@ -420,7 +421,6 @@ body:has(.mobile-nav-toggle)[aria-expanded=true] .primary-nav__list {
 }
 
 .tagline__home {
-  line-height: 1.8;
   font-size: clamp(var(--fs-100), 0.93rem + 0.31vw, var(--fs-300));
 }
 

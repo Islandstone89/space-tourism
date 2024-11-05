@@ -73,4 +73,5 @@ body {
 .tagline {
     font-size: clamp(var(--fs-100), 0.93rem + 0.31vw, var(--fs-125));
     max-width: 70ch;
+    line-height: 1.8;
 }
