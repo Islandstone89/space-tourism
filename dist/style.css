@@ -131,6 +131,7 @@ textarea:not([rows]) {
   --fs-24px: 1.5rem;
   --fs-28px: 1.75rem;
   --fs-32px: 2rem;
+  --fs-40px: 2.5rem;
   --fs-56px: 3.5rem;
   --fs-80px: 5rem;
   --fs-96px: 6rem;
@@ -169,6 +170,7 @@ textarea:not([rows]) {
   --fs-200: var(--fs-24px);
   --fs-250: var(--fs-28px);
   --fs-300: var(--fs-32px);
+  --fs-400: var(--fs-40px);
   --fs-600: var(--fs-56px);
   --fs-900: var(--fs-80px);
   --fs-1100: var(--fs-96px);
@@ -597,13 +599,93 @@ body:has(.mobile-nav-toggle)[aria-expanded=true] .primary-nav__list {
   display: flex;
   flex-direction: column;
   gap: var(--space-100);
+  font-size: var(--fs-200);
 }
 @media (width > 43.75rem) {
   .crew__text__heading {
     gap: var(--space-200);
+    font-size: var(--fs-400);
+  }
+}
+@media (width > 56.25rem) {
+  .crew__text__heading {
+    font-size: var(--fs-600);
+  }
+}
+
+.crew__role {
+  color: var(--clr-accent-200);
+  font-size: var(--fs-125);
+}
+@media (width > 43.75rem) {
+  .crew__role {
+    font-size: var(--fs-200);
+  }
+}
+@media (width > 56.25rem) {
+  .crew__role {
+    font-size: var(--fs-300);
   }
 }
 
 .tagline__crew {
   --flow-space: var(--space-300);
+}
+
+.technology__text {
+  padding-inline-start: var(--space-300);
+  padding-inline-end: var(--space-300);
+}
+@media (width > 43.75rem) {
+  .technology__text {
+    padding-inline-start: var(--space-500);
+    padding-inline-end: var(--space-500);
+  }
+}
+@media (width > 56.25rem) {
+  .technology__text {
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+  }
+}
+
+.technology__text__heading {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-200);
+  font-size: var(--fs-200);
+}
+@media (width > 43.75rem) {
+  .technology__text__heading {
+    font-size: var(--fs-400);
+  }
+}
+@media (width > 56.25rem) {
+  .technology__text__heading {
+    font-size: var(--fs-600);
+  }
+}
+
+.technology__terminology {
+  color: var(--clr-accent-200);
+  font-size: var(--fs-125);
+}
+@media (width > 43.75rem) {
+  .technology__terminology {
+    font-size: var(--fs-200);
+  }
+}
+@media (width > 56.25rem) {
+  .technology__terminology {
+    font-size: var(--fs-300);
+  }
+}
+
+.tagline__technology {
+  --flow-space: var(--space-200);
+}
+@media (width > 56.25rem) {
+  .tagline__technology {
+    --flow-space: var(--space-300);
+  }
 }/*# sourceMappingURL=style.css.map */

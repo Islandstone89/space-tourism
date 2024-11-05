@@ -1,0 +1,55 @@
+
+@use '../globals/utilities' as util;
+
+
+.technology__text {
+    padding-inline-start: var(--space-300);
+    padding-inline-end: var(--space-300);
+
+    @include util.breakpoint(medium) {
+        padding-inline-start: var(--space-500);
+        padding-inline-end: var(--space-500);
+    }
+
+    @include util.breakpoint(large) {
+        padding-inline-start: 0;
+        padding-inline-end: 0;
+    }
+}
+
+.technology__text__heading {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-200);
+    font-size: var(--fs-200);
+   
+
+    @include util.breakpoint(medium) {
+        font-size: var(--fs-400);
+    }
+
+    @include util.breakpoint(large) {
+        font-size: var(--fs-600);
+    }
+}
+
+.technology__terminology {
+    color: var(--clr-accent-200);
+    font-size: var(--fs-125);
+
+    @include util.breakpoint(medium) {
+        font-size: var(--fs-200);
+    }
+
+    @include util.breakpoint(large) {
+        font-size: var(--fs-300);
+    }
+}
+
+.tagline__technology {
+    --flow-space: var(--space-200);
+
+    @include util.breakpoint(large) {
+        --flow-space: var(--space-300);
+    }
+}
