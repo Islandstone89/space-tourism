@@ -56,12 +56,14 @@ body {
 .site__heading {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: var(--space-300);
     color: var(--clr-primary-100);
     font-size: clamp(var(--fs-100), 0.62rem + 1.87vw, var(--fs-250));
 
     @include util.breakpoint(medium) {
         text-align: initial;
+        justify-content: initial;
     }
 }
 
@@ -69,9 +71,9 @@ body {
     color: var(--clr-accent-200);
 }
 
-
 .tagline {
     font-size: clamp(var(--fs-100), 0.93rem + 0.31vw, var(--fs-125));
     max-width: 70ch;
     line-height: 1.8;
+    margin-inline: auto;
 }

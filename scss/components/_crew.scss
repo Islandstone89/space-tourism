@@ -6,12 +6,12 @@
     padding-inline: var(--space-300);
 
     @include util.breakpoint(medium) {
-        text-align: initial;
         padding-block: var(--space-500);
         padding-inline: var(--space-500);
     }
 
     @include util.breakpoint(large) {
+        text-align: initial;
         padding-block: var(--space-600);
         padding-inline: var(--space-1600);
     }

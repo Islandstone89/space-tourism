@@ -1,8 +1,20 @@
-
 @use '../globals/utilities' as util;
 
+.main__technology {
+    text-align: center;
+    padding-block: var(--space-300);
 
-.technology__text {
+    @include util.breakpoint(medium) {
+        padding-block: var(--space-500);
+    }
+
+    @include util.breakpoint(large) {
+        text-align: initial;
+        padding-block: var(--space-600);
+    }
+}
+
+.technology__heading {
     padding-inline-start: var(--space-300);
     padding-inline-end: var(--space-300);
 
@@ -12,14 +24,56 @@
     }
 
     @include util.breakpoint(large) {
-        padding-inline-start: 0;
+        padding-inline-start: var(--space-1200);
         padding-inline-end: 0;
+        flex-direction: row;
+        gap: var(--space-800);
     }
 }
 
-.technology__nav__item {
-   display: grid;
-   place-content: center;
+.technology__content {
+    --flow-space: var(--space-1000);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-400);
+
+    @include util.breakpoint(large) {
+        flex-direction: row-reverse;
+    }
+}
+
+.technology__text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-500);
+    padding-inline-start: var(--space-300);
+    padding-inline-end: var(--space-300);
+
+    @include util.breakpoint(medium) {
+        padding-inline-start: var(--space-500);
+        padding-inline-end: var(--space-500);
+    }
+
+    @include util.breakpoint(large) {
+        padding-inline-start: var(--space-1200);
+        padding-inline-end: 0;
+        flex-direction: row;
+        gap: var(--space-800);
+    }
+}
+
+.technology__nav__list {
+    --gap: var(--space-200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap);
+
+    @include util.breakpoint(large) {
+        --gap: var(--space-400);
+        flex-direction: column;
+    }
 }
 
 .technology__nav__link {
@@ -36,8 +90,9 @@
     border-radius: 50%;
     width: var(--width-size);
     height: var(--height-size);
-    display: grid;
-    place-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @include util.breakpoint(medium) {
         font-size: var(--fs-200);
