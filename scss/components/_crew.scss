@@ -2,17 +2,17 @@
 
 .main__crew  {
     text-align: center;
-    padding-block: var(--space-300);
+    padding-block-start: var(--space-300);
     padding-inline: var(--space-300);
 
     @include util.breakpoint(medium) {
-        padding-block: var(--space-500);
+        padding-block-start: var(--space-500);
         padding-inline: var(--space-500);
     }
 
     @include util.breakpoint(large) {
         text-align: initial;
-        padding-block: var(--space-600);
+        padding-block-start: var(--space-600);
         padding-inline: var(--space-1600);
     }
 }
@@ -21,6 +21,7 @@
     --flow-space: var(--space-800);
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: var(--space-400);
 
     @include util.breakpoint(large) {

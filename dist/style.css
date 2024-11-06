@@ -656,19 +656,19 @@ body[data-category=technology] {
 
 .main__crew {
   text-align: center;
-  padding-block: var(--space-300);
+  padding-block-start: var(--space-300);
   padding-inline: var(--space-300);
 }
 @media (width > 43.75rem) {
   .main__crew {
-    padding-block: var(--space-500);
+    padding-block-start: var(--space-500);
     padding-inline: var(--space-500);
   }
 }
 @media (width > 56.25rem) {
   .main__crew {
     text-align: initial;
-    padding-block: var(--space-600);
+    padding-block-start: var(--space-600);
     padding-inline: var(--space-1600);
   }
 }
@@ -677,6 +677,7 @@ body[data-category=technology] {
   --flow-space: var(--space-800);
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: var(--space-400);
 }
 @media (width > 56.25rem) {
