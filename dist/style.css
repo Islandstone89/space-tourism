@@ -687,6 +687,10 @@ body[data-category=technology] {
   }
 }
 
+.technology__image-wrapper img {
+  width: 100%;
+}
+
 .crew__text__heading {
   display: flex;
   flex-direction: column;
