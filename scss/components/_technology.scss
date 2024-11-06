@@ -82,7 +82,7 @@
     flex-direction: column;
     gap: var(--space-200);
     font-size: var(--fs-200);
-   
+    color: var(--clr-primary-100);
 
     @include util.breakpoint(medium) {
         font-size: var(--fs-400);

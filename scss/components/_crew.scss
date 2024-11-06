@@ -34,7 +34,7 @@
     flex-direction: column;
     gap: var(--space-100);
     font-size: var(--fs-200);
-   
+    color: var(--clr-primary-100);
 
     @include util.breakpoint(medium) {
         gap: var(--space-200);

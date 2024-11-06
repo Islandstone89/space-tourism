@@ -691,6 +691,7 @@ body[data-category=technology] {
   flex-direction: column;
   gap: var(--space-100);
   font-size: var(--fs-200);
+  color: var(--clr-primary-100);
 }
 @media (width > 43.75rem) {
   .crew__text__heading {
@@ -831,6 +832,7 @@ body[data-category=technology] {
   flex-direction: column;
   gap: var(--space-200);
   font-size: var(--fs-200);
+  color: var(--clr-primary-100);
 }
 @media (width > 43.75rem) {
   .technology__text__heading {
