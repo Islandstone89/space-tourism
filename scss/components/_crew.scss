@@ -3,16 +3,19 @@
 .main__crew  {
     text-align: center;
     padding-block-start: var(--space-300);
+    padding-block-end: var(--space-300);
     padding-inline: var(--space-300);
 
     @include util.breakpoint(medium) {
         padding-block-start: var(--space-500);
+        padding-block-end: initial;
         padding-inline: var(--space-500);
     }
 
     @include util.breakpoint(large) {
         text-align: initial;
         padding-block-start: var(--space-600);
+        padding-block-end: var(--space-600);
         padding-inline: var(--space-1600);
     }
 }
@@ -28,10 +31,6 @@
         --flow-space: var(--space-1600);
         flex-direction: row;
     }
-}
-
-.technology__image-wrapper img {
-    width: 100%;
 }
 
 .crew__text__heading {
@@ -85,4 +84,8 @@
     @include util.breakpoint(large) {
         justify-content: initial;
     }
+}
+
+.crew__image {
+   mask-image: linear-gradient(to bottom, var(--clr-accent-400) 77%, var(--clr-accent-500));
 }

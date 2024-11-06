@@ -25,6 +25,7 @@
 }
 
 .primary-nav {
+    --red: red;
     position: relative;
     background-color: var(--clr-accent-100);
 
@@ -41,13 +42,12 @@
              height: 1px;
              width: 100%;
              margin-right: -2rem;
-             background-color: hsl(0 0 100% / .25);;
+             background-color: var(--clr-accent-200);
 
              @media (width < 70rem) {
                 display: none;
             }
-        }
-            
+        } 
 }
 
 .primary-nav__list {
