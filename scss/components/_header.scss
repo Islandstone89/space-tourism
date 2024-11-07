@@ -60,6 +60,7 @@
 
 .primary-nav__list {
     display: flex;
+    display: none;
     flex-direction: row;
     gap: var(--space-600);
     padding-inline-start: var(--space-800);
@@ -126,6 +127,5 @@
 
     @media (width < 35rem) {
         display: block;
-        position: static;
     }
 }

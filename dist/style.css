@@ -245,11 +245,14 @@ body {
     background-image: url("/assets/home/background-home-desktop.jpg");
   }
 }
+body:has(.mobile-nav-toggle)[aria-expanded=true] {
+  background-color: red;
+}
 body:has(.mobile-nav-toggle)[aria-expanded=true] .mobile-nav-toggle {
   background-image: url("/assets/shared/icon-close.svg");
 }
 body:has(.mobile-nav-toggle)[aria-expanded=true] .primary-nav__list {
-  transform: translateX(0%);
+  display: flex;
 }
 body[data-category=destination] {
   background-image: url("/assets/destination/background-destination-mobile.jpg");
@@ -445,6 +448,7 @@ body[data-category=technology] {
 
 .primary-nav__list {
   display: flex;
+  display: none;
   flex-direction: row;
   gap: var(--space-600);
   padding-inline-start: var(--space-800);
@@ -510,7 +514,6 @@ body[data-category=technology] {
 @media (width < 35rem) {
   .mobile-nav-toggle {
     display: block;
-    position: static;
   }
 }
 
