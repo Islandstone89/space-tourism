@@ -10,6 +10,7 @@
     padding-block-start: var(--space-300);
     padding-block-end: var(--space-300);
     padding-inline-start: var(--space-300);
+    color: var(--clr-primary-100);
 
     @include util.breakpoint(medium) {
         padding-block-start: var(--space-300);
@@ -102,7 +103,7 @@
 }
 
 .mobile-nav-toggle {
-    display: none;
+    display: nones;
     position: absolute;
     inset: 10% 50% 0 0;
     border: transparent;
@@ -116,5 +117,6 @@
 
     @media (width < 35rem) {
         display: block;
+        position: static;
     }
 }

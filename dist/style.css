@@ -388,6 +388,7 @@ body[data-category=technology] {
   padding-block-start: var(--space-300);
   padding-block-end: var(--space-300);
   padding-inline-start: var(--space-300);
+  color: var(--clr-primary-100);
 }
 @media (width > 43.75rem) {
   .primary-header {
@@ -480,7 +481,7 @@ body[data-category=technology] {
 }
 
 .mobile-nav-toggle {
-  display: none;
+  display: nones;
   position: absolute;
   inset: 10% 50% 0 0;
   border: transparent;
@@ -495,6 +496,7 @@ body[data-category=technology] {
 @media (width < 35rem) {
   .mobile-nav-toggle {
     display: block;
+    position: static;
   }
 }
 
