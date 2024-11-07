@@ -436,13 +436,16 @@ body[data-category=technology] {
   display: flex;
   flex-direction: row;
   gap: var(--space-600);
-  padding-inline: var(--space-800);
+  padding-inline-start: var(--space-800);
+  padding-inline-end: var(--space-800);
 }
 @media (width < 35rem) {
   .primary-nav__list {
     flex-direction: column;
     gap: var(--space-400);
-    position: fixed;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    position: fixeds;
     inset: 0 0 0 30%;
     z-index: 999;
     background-color: black;
@@ -456,6 +459,13 @@ body[data-category=technology] {
   display: flex;
   gap: var(--space-150);
   padding-block: var(--space-400);
+}
+@media (width < 35rem) {
+  .primary__nav__link {
+    padding-block: 0;
+    padding-inline-start: var(--space-400);
+    padding-inline-end: var(--space-600);
+  }
 }
 .primary__nav__link::after {
   content: "";
