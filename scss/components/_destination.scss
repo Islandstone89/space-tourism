@@ -39,16 +39,37 @@
 .destination__nav__list {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: var(--space-400);
+
+    @include util.breakpoint(large) {
+        justify-content: flex-start;
+    }
 }
 
 .destination__nav__link {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background-color: var(--clr-primary-100);
+        transform: scaleX(0);
+        transition: transform 300ms ease;
+    }
+
+    &:is(:hover, :focus-visible)::after {
+        transform: scaleX(1);
+    }
 
     &[aria-current="page"] {
-        text-decoration-line: underline;
-        text-decoration-color: var(--clr-primary-100);
-        text-decoration-thickness: 3px;
-        text-underline-offset: 1px;
+        &::after {
+            transform: scaleX(1);
+        }
     }
 }
 

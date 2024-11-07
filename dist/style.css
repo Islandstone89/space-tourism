@@ -456,7 +456,7 @@ body[data-category=technology] {
   bottom: 0;
   background-color: var(--clr-primary-100);
   transform: scaleX(0);
-  transition: transform 500ms ease;
+  transition: transform 300ms ease;
 }
 @media (width < 35rem) {
   .primary__nav__link::after {
@@ -627,14 +627,34 @@ body[data-category=technology] {
 .destination__nav__list {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-400);
 }
+@media (width > 56.25rem) {
+  .destination__nav__list {
+    justify-content: flex-start;
+  }
+}
 
-.destination__nav__link[aria-current=page] {
-  text-decoration-line: underline;
-  text-decoration-color: var(--clr-primary-100);
-  text-decoration-thickness: 3px;
-  text-underline-offset: 1px;
+.destination__nav__link {
+  position: relative;
+}
+.destination__nav__link::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: var(--clr-primary-100);
+  transform: scaleX(0);
+  transition: transform 300ms ease;
+}
+.destination__nav__link:is(:hover, :focus-visible)::after {
+  transform: scaleX(1);
+}
+.destination__nav__link[aria-current=page]::after {
+  transform: scaleX(1);
 }
 
 .destination__info {

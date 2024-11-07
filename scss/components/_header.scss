@@ -83,7 +83,7 @@
         bottom: 0;
         background-color: var(--clr-primary-100);
         transform: scaleX(0);
-        transition: transform 500ms ease;
+        transition: transform 300ms ease;
 
         @media (width < 35rem) {
             display: none;
