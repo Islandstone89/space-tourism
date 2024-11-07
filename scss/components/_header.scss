@@ -85,6 +85,10 @@
     }
 }
 
+.primary-nav__list.active {
+    display: flex;
+}
+
 .primary__nav__link {
     position: relative;
     display: flex;

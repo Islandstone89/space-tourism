@@ -251,6 +251,12 @@ body:has(.mobile-nav-toggle)[aria-expanded=true] .mobile-nav-toggle {
 body:has(.mobile-nav-toggle)[aria-expanded=true] .primary-nav__list {
   display: flex;
 }
+body:has(.mobile-nav-toggle)[aria-expanded=false] .mobile-nav-toggle {
+  background-image: url("/assets/shared/icon-hamburger.svg");
+}
+body:has(.mobile-nav-toggle)[aria-expanded=false] .primary-nav__list {
+  display: none;
+}
 body[data-category=destination] {
   background-image: url("/assets/destination/background-destination-mobile.jpg");
 }
@@ -467,6 +473,10 @@ body[data-category=technology] {
     padding-inline-end: var(--space-600);
     z-index: 999;
   }
+}
+
+.primary-nav__list.active {
+  display: flex;
 }
 
 .primary__nav__link {

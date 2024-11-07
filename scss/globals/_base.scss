@@ -36,6 +36,19 @@ body {
         }
     }
 
+    &:has(.mobile-nav-toggle)[aria-expanded="false"] {
+
+        .mobile-nav-toggle {
+            background-image: url('/assets/shared/icon-hamburger.svg');
+        }
+        
+        .primary-nav__list {
+            display: none;
+        }
+    }
+
+
+
     &[data-category="destination"] {
         background-image: url('/assets/destination/background-destination-mobile.jpg');
 
