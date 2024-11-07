@@ -288,6 +288,15 @@ body[data-category=technology] {
   }
 }
 
+.main {
+  text-align: center;
+}
+@media (width > 56.25rem) {
+  .main {
+    text-align: start;
+  }
+}
+
 .container {
   max-width: 1000px;
   margin-inline: auto;
@@ -490,6 +499,7 @@ body[data-category=technology] {
 }
 
 .main__home {
+  text-align: center;
   padding-block: var(--space-300);
   padding-inline: var(--space-300);
 }
@@ -586,13 +596,11 @@ body[data-category=technology] {
 }
 
 .main__destination {
-  text-align: center;
   padding-block: var(--space-300);
   padding-inline: var(--space-300);
 }
 @media (width > 43.75rem) {
   .main__destination {
-    text-align: initial;
     padding-block: var(--space-500);
     padding-inline: var(--space-500);
   }
@@ -658,6 +666,9 @@ body[data-category=technology] {
 }
 
 .destination__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-200);
   border-block-end: 1px solid var(--clr-accent-200);
   padding-block: var(--space-300);
 }
@@ -675,9 +686,13 @@ body[data-category=technology] {
 .destination__travel {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   gap: var(--space-300);
   padding-block-start: var(--space-300);
   padding-block-end: var(--space-300);
+  padding-inline-start: var(--space-400);
+  padding-inline-end: var(--space-400);
 }
 @media (width > 43.75rem) {
   .destination__travel {
@@ -691,6 +706,8 @@ body[data-category=technology] {
   .destination__travel {
     padding-block-start: var(--space-500);
     padding-block-end: var(--space-1600);
+    padding-inline-start: initial;
+    padding-inline-end: var(--space-1000);
   }
 }
 
@@ -699,7 +716,6 @@ body[data-category=technology] {
 }
 
 .main__crew {
-  text-align: center;
   padding-block-start: var(--space-300);
   padding-block-end: var(--space-300);
   padding-inline: var(--space-300);
@@ -713,7 +729,6 @@ body[data-category=technology] {
 }
 @media (width > 56.25rem) {
   .main__crew {
-    text-align: initial;
     padding-block-start: var(--space-600);
     padding-block-end: var(--space-600);
     padding-inline: var(--space-1600);
@@ -797,7 +812,6 @@ body[data-category=technology] {
 }
 
 .main__technology {
-  text-align: center;
   padding-block: var(--space-300);
 }
 @media (width > 43.75rem) {
@@ -807,7 +821,6 @@ body[data-category=technology] {
 }
 @media (width > 56.25rem) {
   .main__technology {
-    text-align: initial;
     padding-block: var(--space-600);
   }
 }
