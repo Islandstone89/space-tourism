@@ -47,6 +47,11 @@
 
 .destination__nav__link {
     position: relative;
+    
+
+    @include util.breakpoint(large) {
+        font-size: var(--fs-125);
+    }
 
     &::after {
         content: "";

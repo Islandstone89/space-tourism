@@ -647,6 +647,11 @@ body[data-category=technology] {
 .destination__nav__link {
   position: relative;
 }
+@media (width > 56.25rem) {
+  .destination__nav__link {
+    font-size: var(--fs-125);
+  }
+}
 .destination__nav__link::after {
   content: "";
   position: absolute;
