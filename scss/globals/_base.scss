@@ -69,6 +69,14 @@ body {
     }
 }
 
+.main {
+    text-align: center;
+
+    @include util.breakpoint(large) {
+        text-align: start;
+    }
+}
+
 .container {
     max-width: 1000px;
     margin-inline: auto;
@@ -112,6 +120,7 @@ body {
     max-width: 70ch;
     line-height: 1.8;
     margin-inline: auto;
+    text-align: center;
 }
 
 :is(.technology__nav__link, .crew__nav__link) {
@@ -150,3 +159,4 @@ body {
         --outline-clr: var(--clr-accent-100);
     }
 }
+

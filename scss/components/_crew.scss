@@ -1,7 +1,6 @@
 @use '../globals/utilities' as util;
 
 .main__crew  {
-    text-align: center;
     padding-block-start: var(--space-300);
     padding-block-end: var(--space-300);
     padding-inline: var(--space-300);
@@ -13,7 +12,6 @@
     }
 
     @include util.breakpoint(large) {
-        text-align: initial;
         padding-block-start: var(--space-600);
         padding-block-end: var(--space-600);
         padding-inline: var(--space-1600);
