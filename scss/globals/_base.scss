@@ -26,6 +26,10 @@ body {
     }
 
     &:has(.mobile-nav-toggle)[aria-expanded="true"] {
+
+        .mobile-nav-toggle {
+            background-image: url('/assets/shared/icon-close.svg');
+        }
         
         .primary-nav__list {
             transform: translateX(0%);
