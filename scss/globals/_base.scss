@@ -26,7 +26,6 @@ body {
     }
 
     &:has(.mobile-nav-toggle)[aria-expanded="true"] {
-        background-color: red;
 
         .mobile-nav-toggle {
             background-image: url('/assets/shared/icon-close.svg');
@@ -73,6 +72,7 @@ body {
         }
     }
 }
+
 
 .main {
     text-align: center;

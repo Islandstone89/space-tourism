@@ -26,12 +26,22 @@
 
     @media (width < 35rem) {
         padding-block-start: 0;
+        align-items: initial;
+        }
+    }
+
+
+.logo-wrapper {
+
+    @media (width < 35rem) {
+        padding-block-start: var(--space-400);
     }
 }
 
 .primary-nav {
     position: relative;
     background-color: var(--clr-accent-100);
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     gap: var(--space-1000);
@@ -60,13 +70,13 @@
 
 .primary-nav__list {
     display: flex;
-    display: none;
     flex-direction: row;
     gap: var(--space-600);
     padding-inline-start: var(--space-800);
     padding-inline-end: var(--space-800);
 
     @media (width < 35rem) {
+        display: none;
         flex-direction: column;
         gap: var(--space-400);
         padding-inline-start: var(--space-400);

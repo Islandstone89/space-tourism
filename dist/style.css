@@ -245,9 +245,6 @@ body {
     background-image: url("/assets/home/background-home-desktop.jpg");
   }
 }
-body:has(.mobile-nav-toggle)[aria-expanded=true] {
-  background-color: red;
-}
 body:has(.mobile-nav-toggle)[aria-expanded=true] .mobile-nav-toggle {
   background-image: url("/assets/shared/icon-close.svg");
 }
@@ -413,12 +410,20 @@ body[data-category=technology] {
 @media (width < 35rem) {
   .primary-header {
     padding-block-start: 0;
+    align-items: initial;
+  }
+}
+
+@media (width < 35rem) {
+  .logo-wrapper {
+    padding-block-start: var(--space-400);
   }
 }
 
 .primary-nav {
   position: relative;
   background-color: var(--clr-accent-100);
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   gap: var(--space-1000);
@@ -448,7 +453,6 @@ body[data-category=technology] {
 
 .primary-nav__list {
   display: flex;
-  display: none;
   flex-direction: row;
   gap: var(--space-600);
   padding-inline-start: var(--space-800);
@@ -456,6 +460,7 @@ body[data-category=technology] {
 }
 @media (width < 35rem) {
   .primary-nav__list {
+    display: none;
     flex-direction: column;
     gap: var(--space-400);
     padding-inline-start: var(--space-400);
