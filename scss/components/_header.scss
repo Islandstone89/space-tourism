@@ -25,7 +25,6 @@
 }
 
 .primary-nav {
-    --red: red;
     position: relative;
     background-color: var(--clr-accent-100);
 
@@ -70,12 +69,35 @@
 }
 
 .primary__nav__link {
+    position: relative;
     display: flex;
     gap: var(--space-150);
     padding-block: var(--space-400);
 
+    &::after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background-color: var(--clr-primary-100);
+        transform: scaleX(0);
+        transition: transform 500ms ease;
+
+        @media (width < 35rem) {
+            display: none;
+        }
+    }
+
+    &:is(:hover, :focus-visible)::after {
+        transform: scaleX(1);
+    }
+
     &[aria-current="page"] {
-        border-bottom: 3px solid var(--clr-primary-100);
+        &::after {
+            transform: scaleX(1);
+        }
     }
 }
 
