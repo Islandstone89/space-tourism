@@ -25,28 +25,20 @@ body {
         background-image: url('/assets/home/background-home-desktop.jpg');
     }
 
-    &:has(.mobile-nav-toggle)[aria-expanded="true"] {
+    &:has(.mobile-nav-toggle[aria-expanded="true"]) {
 
         .mobile-nav-toggle {
             background-image: url('/assets/shared/icon-close.svg');
+        }
+
+        .primary-nav {
+            background-color: var(--clr-accent-100);
         }
         
         .primary-nav__list {
             display: flex;
         }
     }
-
-    &:has(.mobile-nav-toggle)[aria-expanded="false"] {
-
-        .mobile-nav-toggle {
-            background-image: url('/assets/shared/icon-hamburger.svg');
-        }
-        
-        .primary-nav__list {
-            display: none;
-        }
-    }
-
 
 
     &[data-category="destination"] {
