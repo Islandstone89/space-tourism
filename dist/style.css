@@ -394,6 +394,7 @@ body[data-category=technology] {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: var(--space-200);
   padding-block-start: var(--space-300);
   padding-block-end: var(--space-300);
   padding-inline-start: var(--space-300);
@@ -442,7 +443,7 @@ body[data-category=technology] {
   top: 50%;
   height: 1px;
   width: 100%;
-  margin-right: -4rem;
+  margin-right: -2rem;
   background-color: var(--clr-accent-200);
 }
 @media (width < 70rem) {
