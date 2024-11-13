@@ -25,18 +25,22 @@ body {
         background-image: url('/assets/home/background-home-desktop.jpg');
     }
 
-    &:has(.mobile-nav-toggle[aria-expanded="true"]) {
-
-        .mobile-nav-toggle {
-            background-image: url('/assets/shared/icon-close.svg');
-        }
-
+    &:has(.menu-btn-open[aria-expanded="true"]) {
+        
         .primary-nav {
             background-color: var(--clr-accent-100);
         }
         
         .primary-nav__list {
             display: flex;
+        }
+
+        .menu-btn-open {
+            display: none;
+        }
+
+        .menu-btn-close {
+            display: block;
         }
     }
 

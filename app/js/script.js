@@ -1,17 +1,14 @@
 
-let nav = document.querySelector(".primary-nav");
-let navList = document.querySelector(".primary-nav__list");
-let navToggle = document.querySelector(".mobile-nav-toggle");
+let openMenuBtn = document.querySelector(".menu-btn-open");
+let closeMenuBtn = document.querySelector(".menu-btn-close");
 
-navToggle.addEventListener("click", () => {
 
-    if (navToggle.getAttribute("aria-expanded", "false")) {
-            navToggle.setAttribute("aria-expanded", "true")
-    }
-
-    else {
-        navToggle.setAttribute("aria-expanded", "false")
-        }
+openMenuBtn.addEventListener("click", () => {
+    openMenuBtn.setAttribute("aria-expanded", "true")
     }
 );
 
+closeMenuBtn.addEventListener("click", () => {
+        openMenuBtn.setAttribute("aria-expanded", "false")
+    }
+);
