@@ -22,7 +22,6 @@
     @include util.breakpoint(large) {
         padding-block-start: var(--space-400);
         padding-block-end: var(--space-300);
-        padding-inline-start: var(--space-1200);
     }
 
     @media (width < 35rem) {
