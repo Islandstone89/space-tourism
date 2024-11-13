@@ -513,23 +513,6 @@ body[data-category=technology] {
   transform: scaleX(1);
 }
 
-/* .mobile-nav-toggle {
-    display: none;
-    border: transparent;
-    background-color: transparent;
-    background-images: url('/assets/shared/icon-hamburger.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 1.5rem;
-    aspect-ratio: 1;
-    z-index: 1999;
-    align-self: end;
-    margin-inline-end: var(--space-100);
-
-    @media (width < 35rem) {
-        display: block;
-    }
-} */
 .menu-btn {
   margin-inline-end: var(--space-100);
   margin-block-start: 12px;
